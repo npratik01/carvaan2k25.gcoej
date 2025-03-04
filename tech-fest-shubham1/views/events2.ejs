@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Carvaan 2k25</title>
+    <link rel="website icon" type="png"
+     href="images/college-logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+
+  <style>
+    /* Custom CSS for tech-themed cards with blue variations */
+    .event-card {
+      background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+      border: 1px solid #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2); /* Blue shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 20px 30px;
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4); /* Blue shadow */
+    }
+
+    .event-title {
+      color: #007bff; /* Bright blue */
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-shadow: 0 0 5px rgba(0, 123, 255, 0.7); /* Blue glow */
+    }
+
+    .event-card p {
+      color: #b3b3b3; /* Light gray for text */
+    }
+
+    .btn {
+      background: linear-gradient(145deg, #007bff, #0056b3); /* Blue gradient */
+      color: #fff; /* White text for better contrast */
+      border: none;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(
+        145deg,
+        #0056b3,
+        #007bff
+      ); /* Reverse blue gradient */
+      transform: scale(1.05);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid #007bff; /* Blue border */
+      color: #007bff; /* Blue text */
+    }
+
+    .btn-secondary:hover {
+      background: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+    }
+
+    body {
+      font-family: "Roboto Condensed", serif;
+    }
+
+    .hero {
+      background-color: #000;
+      margin: auto;
+    }
+
+    .heroBaap {
+      background-color: #000;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: white;
+      font-weight: 400px;
+      text-align: center;
+      font-size: large;
+      flex: auto;
+    }
+
+    /* .sponsors{
+      justify-content: center;
+      justify-items: center;
+    } */
+    
+  </style>
+
+  <body>
+    <%#- include('./partials/tech_Navbar') %>
+    <!-- <div class="college-logo-container text-center">
+      <img class="college-logo h-[100px]" src="./images/logo-gcoej.jpg" alt="College Logo"
+        style="display: block; margin: auto; width: 60%;" />
+    </div> -->
+
+    <div class="heroBaap">
+      <div class="navbar">
+      <%- include('./partials/tech_Navbar') %>
+      </div>
+
+      <!-- <div class="w-full px-6 md:px-12 lg:px-20 mt-6"> -->
+        <!-- <div
+          class="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-blue-800 to-blue-1100 rounded-xl shadow-lg p-6 md:p-10"
+        > -->
+        <div class="sponsors flex justify-center mt-6 items-center w-full">
+          <img src="images/jainLogo.png" height="50px" width="100px"  alt="">
+          
+        </div>
+        <h5 class="justify-center items-center flex text-white">Presents</h5>
+        <h1 class="text-3xl font-bold text-center">Tech Carvaan 2k25</h1>
+        <br>
+        <br>
+        <br>
+
+          <!-- Left Section: Event Name & Description -->
+          
+          <!-- <div class="md:w-1/2 flex justify-center mt-6 md:mt-0"> -->
+            <!-- <img
+              src="images/techCarvaanLogo1.png"
+              alt="Tech Fest 2025"
+              class="w-60 h-60 rounded-lg shadow-sm"
+            /> -->
+          <!-- </div> -->
+
+          <!-- Right Section: Event Image -->
+
+          <!-- <div class="md:w-1/2 text-left"> -->
+            <!-- <h2>Jain Irrigation Systems Limited presents,</h2>
+            <h1 class="text-3xl md:text-4xl font-bold text-white">
+              Tech-Carvaan 2k25 
+            </h2>
+            <p class="mt-3 text-lg text-gray-100">
+              Join us at Government College of Engineering Jalgaon for Tech Carvaan 2k25, the ultimate national-level tech fest! Compete with the brightest minds across the country in exciting challenges ranging from coding and robotics to gaming and design. This is your chance to showcase your skills, collaborate with innovators, and take your passion for technology to the next level.
+
+              Don't miss out on the action—register now and be part of the tech revolution!
+            </p>
+            <blockquote class="mt-4 text-md italic text-gray-200">
+              "Innovation is the outcome of a habit, not a random act!"
+            </blockquote> -->
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="tech-events" class="hero">
+      <!-- <h2 class="text-3xl font-bold text-center mb-8 text-white-400 pt-[30px]">
+        Technical Events
+      </h2> -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 5: Code Sphere -->
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">Code Sphere</h4>
+          <p class="mt-2">
+            <strong>🔹CodeSphere Hackathon - AI for a Better Tomorrow</strong>
+            <br>
+            Unleash your creativity and coding skills in CodeSphere Hackathon, a 24-hour offline AI challenge! Collaborate with peers, tackle real-world problems, and develop AI-driven solutions in areas like Agriculture, Healthcare, Education, and Social Good. Compete for exciting prizes, gain hands-on AI experience, and connect with industry experts. Think, Code, Innovate! 🤖🔥
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/84yC6N9iGARbN1so9" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/CodeSphere">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Card 5: DronaTHON -->
+
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">DronaTHON</h4>
+          <p class="mt-2">
+            <strong>🔹Dronathon 2.0 - Drone Racing Event 🚀</strong>
+            <br>
+            Experience the thrill of high-speed drone 
+            Experience the thrill of high-speed drone racing at Dronathon 2.0, organized by Team Third Axis, Drone Club, GCOEJ! Navigate through challenging obstacles, showcase your piloting skills, and compete for a exciting prize pool. Open to individuals and teams from any institution! Register now and claim your spot in the ultimate drone racing challenge! 🏆🔥
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/Dqbv3VSWuMaUpf89A" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/dronathon">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Card 4: Electrical Event -->
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">Escape The Room - Adventure Event</h4>
+          <p class="mt-2">
+            <strong>🔹Escape The Room - Adventure Puzzle Challenge 🔐</strong>
+            Put your problem-solving skills to the test in Escape The Room, a thrilling electrical engineering challenge! Solve puzzles, crack circuits, and escape before time runs out. Compete in Power Quiz, Speed Assembly, and Wired-Up rounds to claim victory. Gather your team and take on the ultimate test of logic, speed, and technical expertise! 🏆⚡
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/ctSPjx2rafcSnv136" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/electrical">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Card 1: Mechanical Expo -->
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">Auto Expo</h4>
+          <p class="mt-2">
+            <strong>🔹AUTO EXPO 2025 🚗⚙️🔋</strong>
+            <br>
+            Experience the future of automobiles at AUTO EXPO 2025! A thrilling showcase of the latest cars, bikes, EVs, and concept vehicles, this event brings together automobile enthusiasts, industry experts, and leading brands for an action-packed day of innovation and excitement.
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/494hDE7erxK9owSh6" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/mech">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- AutoCAD -->
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">Quick CAD Clash</h4>
+          <p class="mt-2">
+            <strong>🔹Quick CAD Clash 🏆💻</strong>
+            <br>
+            Test your CATIA skills in this fast-paced CAD competition! Showcase your 3D modeling, sheet metal design, and assembly expertise through three challenging rounds designed to simulate real-world mechanical design tasks.
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/UhhR1iehnPk5HLFv9" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/autoCAD">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Card 3: SensoCraft -->
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">SensoCraft</h4>
+          <p class="mt-2">
+            <strong>🔹Sensocraft - Tech-Carvaan Event ⚡</strong>
+            <br>
+            Unleash your innovation at Sensocraft, the premier Tech-Carvaan event of GCOEJ! A national-level platform for students, developers, and innovators to showcase technical prowess, tackle real-world challenges, and explore cutting-edge technologies. Join the competition, push the boundaries of creativity, and be part of a groundbreaking tech experience! 🚀🔥
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/3C5qFutmEXMoKG4v9" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/sensoCraft">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Card 5: Arch X -->
+
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">ArchX</h4>
+          <p class="mt-2">
+            <strong>🔹ArchX - The Ultimate Bridge Challenge 🌉</strong>
+            <br>
+            Put your engineering skills to the test in ArchX, presented by Nirmanika, Civil Department, GCOEJ! Design and construct a self-supporting bridge using limited materials. Compete to build the strongest structure and prove your creativity, precision, and teamwork.
+            <br>
+            🏆 Build. Test. Conquer!
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/iZc4c8zB2rwgHEfe7" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/civil">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Card 1: RoboSoccer -->
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">RoboSoccer</h4>
+          <p class="mt-2">
+            <strong>🔹Robosoccer ⚽🤖</strong>
+            <br>
+            Get ready for an electrifying robotic football showdown! Design, build, and control your robots to compete in a fast-paced soccer match where precision, strategy, and teamwork are key. Compete in three intense rounds—dribbling, passing, and a thrilling final match—to claim victory!
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/GJFWXCTB57JrwHDM7" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/roboSoccer">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Card 5: AeroQuest -->
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">AeroQuest</h4>
+          <p class="mt-2">
+            <strong>🛩️ AeroQuest - The Ultimate Drone Simulator Challenge!</strong>
+              <br>
+              Gear up for an exciting drone simulation competition at Tech-Carvaan 2K25! Navigate hurdles, prove your piloting skills, and compete for victory in this two-round challenge. The fastest and most skilled pilots will advance and claim the top spot! 🚀🏆
+              <br>
+              💰 Exciting cash prizes for the winners!
+              📋 Register now and take on the challenge!
+              <br>
+              🔥 Fly. Compete. Conquer! 🛸
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/dR7SH9xUq4oVaTHd7" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/aeroQuest">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Card 2: GuideLine X -->
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">GuideLine X</h4>
+          <p class="mt-2">
+            <strong>🤖 GlideLineX - National Level Line Follower Robot Competition 🤖</strong>
+            <br>
+            Showcase your robotic skills at GlideLineX, where precision meets speed! Build an autonomous robot that navigates a designated track, passes checkpoints, and overcomes challenges using your coding expertise. Open to students across India, this event offers a thrilling competition with a exciting prize pool!
+            <p>Think fast, code smart, and race to victory!🚀</p>
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/pQKnSebVSZfMzqxN7" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/guideLineX">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Card 5: Asterix -->
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">Asterix</h4>
+          <p class="mt-2">
+          
+            <strong>🔹 Design Event (National Level)</strong> – Showcase your mechanical design skills using SolidWorks! Participants will be given a mechanical part to design within a set time, judged on accuracy, detailing, and creativity. 💡🏆
+            <br>
+            <strong>🔹 TIG Welding Workshop (College Level)</strong> – Gain hands-on experience in TIG welding under expert guidance. Learn techniques, safety measures, and apply your skills in a practical session. 🔥⚙
+            
+            🔗 Register now & enhance your technical skills! 🚀
+            
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="/tech-event-details/asterix">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/asterix">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Card 2: ShutterBugs -->
+        <div class="event-card p-6">
+          <h4 class="event-title text-center">ShutterBugs</h4>
+          <p class="mt-2">
+            <strong>📸Videography Competition</strong>
+            <br>
+            Join the Videography Competition 🎥 at Technical Carvaan! Organized by the Shutterbugs Club 📸, this event invites students 🎓 to capture the best moments in a 1-3 minute video. Videos will be judged on creativity, storytelling, and quality. Only mobile phones 📱 allowed for recording. Winners 🏆 will be announced at the closing ceremony!</p>
+          </p>
+          <div class="flex flex-wrap justify-center gap-20 mt-4">
+            <a href="https://forms.gle/RiqEoFBTKdxK5jUz8" target="_blank">
+              <button class="btn">Register</button>
+            </a>
+            <a href="/tech-event-details/shutterBugs">
+              <button class="btn btn-secondary">View Details</button>
+            </a>
+            
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <%- include('partials/tech_footer') %>
+  </body>
+</html>
