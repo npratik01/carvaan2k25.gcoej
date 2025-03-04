@@ -100,7 +100,7 @@
 
     <!-- Events Section -->
     <section id="events-section" class="section2 flex flex-col justify-center items-center relative container my-10">
-      <h2 class="text-5xl text-center font-bold mb-5">Our Main Events of carvaan 2K25</h2>
+      <h2 class="text-5xl text-center font-bold mb-5">Our Main Events</h2>
 
       <!-- card 2 -->
       <div class="elem2 m-10 my-20 flex flex-col w-full bg-white rounded shadow-lg sm:w-3/4 md:w-1/2 lg:w-3/6">
@@ -349,11 +349,7 @@
       .querySelector(".hero-text a")
       .addEventListener("mouseenter", () => {
         gsap.to(".hero-text a", {
-          border: "2px solid black",
-          backgroundImage: "linear-gradient(45deg, magenta, cyan, blue)",
-          backgroundSize: "200% 200%",
-          borderColor: "transparent",
-          scale: 1.1,
+          scale: 1.2,
           ease: "circ.out",
         });
       });
@@ -413,11 +409,7 @@
     document.querySelectorAll(".section2 button").forEach((button) => {
       button.addEventListener("mouseenter", () => {
         gsap.to(button, {
-          border: "1px solid black",
-          backgroundImage: "linear-gradient(45deg, magenta, cyan, blue)",
-          backgroundSize: "200% 200%",
-          borderColor: "transparent",
-          scale: 1.1,
+          scale: 1.2,
           ease: "power2.out",
         });
       });
