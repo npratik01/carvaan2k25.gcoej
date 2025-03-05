@@ -118,6 +118,38 @@
       justify-content: center;
       justify-items: center;
     } */
+
+    .prize-card{
+      width:570px;
+      height:300px;
+    }
+
+    @keyframes neonGlow {
+            0% {
+                box-shadow: 0 0 10px rgb(0, 183, 255);
+            }
+            100% {
+                box-shadow: 0 0 20px rgb(0, 183, 255);
+            }
+        }
+
+        .animate-glow {
+            animation: neonGlow 2s infinite alternate;
+        }
+
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-floating {
+            animation: floating 2s infinite ease-in-out;
+        }
+
 </style>
 
 <body class="bg-black">
@@ -149,7 +181,7 @@
 
 
       <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50">
-        <div class="sponsors flex justify-center mt-6 items-center w-full">
+        <div class="sponsors flex justify-center items-center w-full">
           <img src="images/jain_logo_black_outline.png" class="m-8" height="80px" width="200px" alt="">
         </div>
         <h5 class="justify-center items-center flex text-white m-4 text-2xl">Presents</h5>
@@ -160,7 +192,8 @@
             alt="">
         </div>
         <h2 class="text-3xl tracking-wider">"Where ideas meet technology - explore our exciting events!"</h2>
-
+       
+        
       </div>
       <br>
     </div>
@@ -201,11 +234,25 @@
     </div>
     </div>
 
-    <div id="tech-events" class="hero relative w-full h-auto">
-      <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover -z-10">
-        <source src="/video/Tech_BG.mp4" type="video/mp4">
+    <div class="flex items-center justify-center m-10 ">
+      
+      <div class="prize-card text-center rounded-xl bg-black bg-opacity-0 backdrop-blur-sm bg-white/30 relative overflow-hidden border-2 border-red-400 shadow-lg animate-glow">
+        <video autoplay loop muted playsinline
+        class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 ">
+        <source src="/video/prizePool_BG.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+      <div class="h-full w-full bg-opacity-0 backdrop-blur-sm bg-black/30">
+        <h2 class="text-blue-500 text-2xl font-bold mb-2">Prize Pool</h2>
+        <p class="text-white text-sm opacity-80">Get Ready to Shine Bright and Win Big!</p>
+        <img src="/images/trophy.png" class="w-24 mx-auto my-4 animate-floating" alt="Trophy">
+        <p class="text-yellow-400 text-3xl opacity-80 font-bold">₹2,00,000</p>
+        <p class="text-white text-sm mt-2 opacity-80">Celebrating your creativity and innovation in technology!</p>
+      </div>
+    </div>
+    </div>
+
+    <div id="tech-events" class="hero relative w-full h-auto">
       <!-- <h2 class="text-3xl font-bold text-center mb-8 text-white-400 pt-[30px]">
         Technical Events
       </h2> -->
