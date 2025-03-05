@@ -112,7 +112,6 @@
     font-weight: 400px;
     text-align: center;
     font-size: large;
-    flex: auto;
   }
 
   /* .sponsors{
@@ -122,16 +121,18 @@
 </style>
 
 <body class="bg-black">
-  <%#- include('./partials/tech_Navbar') %>
+  <%- include('./partials/tech_Navbar') %>
     <!-- <div class="college-logo-container text-center">
       <img class="college-logo h-[100px]" src="./images/logo-gcoej.jpg" alt="College Logo"
         style="display: block; margin: auto; width: 60%;" />
     </div> -->
 
-    <div class="heroBaap">
-      <div class="navbar">
-        <%- include('./partials/tech_Navbar') %>
-      </div>
+    <div class="heroBaap relative w-full h-screen overflow-hidden">
+      <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2">
+        <source src="/video/Tech BG.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
 
       <!-- <div class="w-full px-6 md:px-12 lg:px-20 mt-6"> -->
       <!-- <div
@@ -145,19 +146,22 @@
         font-weight: 800;
         font-style: normal;" class="text-6xl font-bold text-center">Tech Carvaan 2k25</h1> -->
         
-      <div class="sponsors flex justify-center mt-6 items-center w-full">
-        <img src="images/jain_logo_black_outline.png" class="m-8" height="80px" width="200px" alt="">
-      </div>
+      
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50">
+        <div class="sponsors flex justify-center mt-6 items-center w-full">
+          <img src="images/jain_logo_black_outline.png" class="m-8" height="80px" width="200px" alt="">
+        </div>
       <h5 class="justify-center items-center flex text-white m-4 text-2xl">Presents</h5>
       <h1 class="event_name text-8xl font-semibold text-center">Tech Carvaan 2k25</h1>
-      <h2 class="mt-5">Associate Sponsors</h2>
+      <h2 class="m-8">Associate Sponsors</h2>
         <div class="flex justify-center items-center w-full">
           <img class="flex justify-center items-center" height="10xpx" width="100px" src="images/solidWorksLogo1.png" alt="">
         </div>
-        <br>
-        <br>
+        </div>
         <br>
       <h2 class="text-3xl mb-60 tracking-wider">"Where ideas meet technology - explore our exciting events!"</h2>
+    </div>
+
 
 
 
