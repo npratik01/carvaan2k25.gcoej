@@ -20,45 +20,38 @@
 </head>
 
 <style>
-  @media (max-width: 630px) {
-    .heroBaap {
-      height: 80vh;
+  @media (max-width: 740px) {
+    .hero .event_name {
+      font-size: 40px;
     }
 
-    .hero-video {
-      width: 60%;
-      height: 60%;
+    .hero .presents {
+      font-size: 20px;
+      margin: 10px;
+    }
+
+    .hero .jain {
+      height: 30px;
+      width: 80px;
+      margin: 0;
+    }
+
+    .hero .solidworks {
+      margin-bottom: 5px;
+    }
+
+    .hero .slogan {
+      font-size: 20px;
+    }
+
+    .hero-baap .hero-video {
+      width: 100vw;
+      height: 100vh;
       object-fit: cover;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 10px;
-    }
-
-    .event_name {
-      font-size: 1rem;
-      /* Adjust font size for smaller screens */
-    }
-
-    .sponsors img {
-      width: 150px;
-      /* Adjust logo size */
-      height: auto;
-    }
-
-    h5 {
-      font-size: 1.2rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    .hero img {
-      max-width: 60%;
-      /* Ensure images scale properly */
-      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: none;
     }
   }
 
@@ -224,17 +217,18 @@
 
 
       <div class="hero absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50">
-        <div class="sponsors flex justify-center items-center w-full">
-          <img src="images/jain_logo_black_outline.png" class="mt-2" height="80px" width="200px" alt="">
+        <div class="sponsors jain flex justify-center items-center w-full">
+          <img src="images/jain_logo_black_outline.png" class="m-2" height="80px" width="200px" alt="">
         </div>
-        <h5 class="justify-center items-center flex text-white m-4 text-2xl">Presents</h5>
+        <h5 class="presents justify-center items-center flex text-white m-4 text-2xl">Presents</h5>
         <h1 class="event_name text-8xl font-semibold text-center">Tech Carvaan 2k25</h1>
-        <h2>Associate Sponsors</h2>
+        <h2 class="m-2">Associate Sponsors</h2>
         <div class="flex justify-center items-center w-full">
-          <img class="flex justify-center items-center mb-20" height="10xpx" width="100px"
+          <img class="solidworks flex justify-center items-center mb-20" height="10xpx" width="100px"
             src="images/solidWorksLogo1.png" alt="">
         </div>
-        <h2 class="text-3xl tracking-wider mt-8">"Where ideas meet technology - explore our exciting events!"</h2>
+        <h2 class="slogan text-3xl tracking-wider mt-8">"Where ideas meet technology - explore our exciting events!"
+        </h2>
       </div>
       <br>
     </div>
