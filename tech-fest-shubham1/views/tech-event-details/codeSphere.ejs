@@ -1,166 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeSphere Hackathon - Tech Carvaan 2K25</title>
+    <title>CodeSphere Hackathon - Tech Carvaan 2025</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-  body, h1, h2, h3, p, a, button {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    a,
+    button {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-  body {
-      background-color: #0a192f;
-      color: #ccd6f6;
-      line-height: 1.6;
-      padding: 20px;
-  }
+    body {
+        background-color: #0a192f;
+        color: #ccd6f6;
+        line-height: 1.6;
+        padding: 20px;
+    }
 
-  .container {
-      max-width: calc(100% - 400px); /* 200px margin on both sides */
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #112240;
-      border: 2px solid #64ffda; /* Border color matching the theme */
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+    .container {
+        max-width: calc(100% - 400px);
+        /* 200px margin on both sides */
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #112240;
+        border: 2px solid #64ffda;
+        /* Border color matching the theme */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-  h1 {
-      font-size: 2.5rem;
-      color: #64ffda;
-      margin-bottom: 20px;
-      text-align: center;
-  }
+    h1 {
+        font-size: 2.5rem;
+        color: #64ffda;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
-  p {
-      font-size: 1.1rem;
-      margin-bottom: 15px;
-  }
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
 
-  strong {
-      color: #64ffda;
-  }
+    strong {
+        color: #64ffda;
+    }
 
-  .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 1rem;
-      color: #0a192f;
-      background-color: #64ffda;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      justify-content: center;
-  }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #0a192f;
+        background-color: #64ffda;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        justify-content: center;
+    }
 
-  .btn:hover {
-      background-color: #52d1b2;
-  }
+    .btn:hover {
+        background-color: #52d1b2;
+    }
 
-  .buttons {
-      display: flex;
-      justify-content: center; /* Horizontally center the buttons */
-      gap: 20px; /* Adds space between the buttons */
-  }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        /* Horizontally center the buttons */
+        gap: 20px;
+        /* Adds space between the buttons */
+    }
 
-  /* Responsive adjustments */
-  @media (max-width: 1200px) {
-      .container {
-          max-width: calc(100% - 200px); /* Reduce margin for smaller screens */
-      }
-  }
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+        .container {
+            max-width: calc(100% - 200px);
+            /* Reduce margin for smaller screens */
+        }
+    }
 
-  @media (max-width: 768px) {
-      .container {
-          max-width: calc(100% - 100px); /* Further reduce margin for tablets */
-      }
+    @media (max-width: 768px) {
+        .container {
+            max-width: calc(100% - 100px);
+            /* Further reduce margin for tablets */
+        }
 
-      h1 {
-          font-size: 2rem; /* Adjust heading size for smaller screens */
-      }
-  }
+        h1 {
+            font-size: 2rem;
+            /* Adjust heading size for smaller screens */
+        }
+    }
 
-  @media (max-width: 480px) {
-      .container {
-          max-width: calc(100% - 40px); /* Minimal margin for mobile devices */
-          padding: 15px;
-      }
+    @media (max-width: 480px) {
+        .container {
+            max-width: calc(100% - 40px);
+            /* Minimal margin for mobile devices */
+            padding: 15px;
+        }
 
-      h1 {
-          font-size: 1.8rem; /* Further adjust heading size for mobile */
-      }
+        h1 {
+            font-size: 1.8rem;
+            /* Further adjust heading size for mobile */
+        }
 
-      p {
-          font-size: 1rem; /* Adjust paragraph font size for mobile */
-      }
-  }
+        p {
+            font-size: 1rem;
+            /* Adjust paragraph font size for mobile */
+        }
+    }
 </style>
+
 <body>
-  <div class="container">
-    <h1>CodeSphere Hackathon - AI for a Better Tomorrow</h1>
-    <h2>Organized by COMPACT, GCOEJ</h2>
-    
-    <div class="details">
-        <p><strong>📅 Event Date : </strong> 24th - 25th March 2025, 10 AM Onwards</p>
-        <p><strong>🏆 Prize Pool : </strong>Worth upto ₹40,000*</p>
-        <p><strong>📍 Venue : </strong>Jain Hills, Jain Irrigation Systems Ltd, Jalgaon.</p>
-         
-        <h3>About the Event</h3>
-        <p>GCOEJ Hackathon 2025 is the flagship hackathon of Government College of Engineering, Jalgaon, bringing together developers and innovators to solve real-world problems using AI. The event provides a 24-hour collaborative platform for participants to showcase their problem-solving skills.</p>
+    <div class="container">
+        <h1>CodeSphere Hackathon - AI for a Better Tomorrow</h1>
+        <h2>Organized by COMPACT, GCOEJ</h2>
 
-        <h3>Event Roadmap</h3>
-        <ul>
-            <li><strong>📌 Registration Starts:</strong> 1st March 2025</li>
-            <li><strong>📌 PPT Submission Deadline:</strong> 18th March 2025</li>
-            <li><strong>📌 Shortlisting Begins:</strong> 18th March 2025</li>
-            <li><strong>📌 Finalists Result Announcement:</strong> 20th March 2025</li>
-            <li><strong>📌 Grand Finale:</strong> 24th - 25th March 2025</li>
-        </ul>
+        <div class="details">
+            <p><strong>📅 Event Date : </strong> 24th - 25th March 2025, 10 AM Onwards</p>
+            <p><strong>🏆 Prize Pool : </strong>Worth upto ₹40,000*</p>
+            <p><strong>📍 Venue : </strong>Jain Hills, Jain Irrigation Systems Ltd, Jalgaon.</p>
 
-        <h3>Competition Themes</h3>
-        <ul>
-            <li><strong>AI for Agriculture:</strong> Enhancing farming techniques and crop yields.</li>
-            <li><strong>AI for Social Good:</strong> Solutions for disaster management and accessibility.</li>
-            <li><strong>AI for Education:</strong> AI-driven personalized learning.</li>
-            <li><strong>AI for Healthcare:</strong> Medical diagnostics and predictive healthcare analytics.</li>
-        </ul>
+            <h3>About the Event</h3>
+            <p>GCOEJ Hackathon 2025 is the flagship hackathon of Government College of Engineering, Jalgaon, bringing
+                together developers and innovators to solve real-world problems using AI. The event provides a 24-hour
+                collaborative platform for participants to showcase their problem-solving skills.</p>
 
-        <h3>General Rules</h3>
-        <ul>
-            <li>Teams of 4-5 members from the same college.</li>
-            <li>Registration is completely online.</li>
-            <li>Shortlisted teams will be invited to the grand finale.</li>
-            <li>Projects must be developed within the 24-hour timeframe.</li>
-            <li>Final project demo should not exceed 15 minutes.</li>
-            <li>Plagiarism is strictly prohibited.</li>
-            <li>Participants must bring their own laptops and development tools.</li>
-            <li>Participants should use given standard PPT Format : <a href="https://docs.google.com/presentation/d/1L5j3AeZe4F4UA-MK8NCdnYPecxGVN8bm/edit?usp=drive_link&ouid=112355727294369462305&rtpof=true&sd=true" style="font-weight: 500;">click here</a> </li>
-        </ul>
+            <h3>Event Roadmap</h3>
+            <ul>
+                <li><strong>📌 Registration Starts:</strong> 1st March 2025</li>
+                <li><strong>📌 PPT Submission Deadline:</strong> 18th March 2025</li>
+                <li><strong>📌 Shortlisting Begins:</strong> 18th March 2025</li>
+                <li><strong>📌 Finalists Result Announcement:</strong> 20th March 2025</li>
+                <li><strong>📌 Grand Finale:</strong> 24th - 25th March 2025</li>
+            </ul>
 
-        <h3>Registration Details</h3>
-        <p><strong>💳 Payment:</strong> Complete online registration.</p>
-        <p><strong>📩 Contact:</strong> <a href="mailto:compact@gcoej.ac.in">compact@gcoej.ac.in</a></p>
-        
-        <div class="contact">
-            <h3>For More Information</h3>
-            <p><strong>📞 Coordinators:</strong></p>
-            <p>Ujjwal Abdeo (Coordinator): +91 80105 34960</p>
-            <p>Vitthal Dhage (President): +91 90213 73220</p>
-        </div>
+            <h3>Competition Themes</h3>
+            <ul>
+                <li><strong>AI for Agriculture:</strong> Enhancing farming techniques and crop yields.</li>
+                <li><strong>AI for Social Good:</strong> Solutions for disaster management and accessibility.</li>
+                <li><strong>AI for Education:</strong> AI-driven personalized learning.</li>
+                <li><strong>AI for Healthcare:</strong> Medical diagnostics and predictive healthcare analytics.</li>
+            </ul>
 
-        <div class="buttons">
-            <a href="https://forms.gle/84yC6N9iGARbN1so9" target="_blank" class="btn">Register Now</a>
-            <a href="https://drive.google.com/file/d/19oBal6UKcwzBrjwPOOw4c1dBvDJjT-IS/view?usp=sharing" class="btn">Download Rulebook</a>
+            <h3>General Rules</h3>
+            <ul>
+                <li>Teams of 4-5 members from the same college.</li>
+                <li>Registration is completely online.</li>
+                <li>Shortlisted teams will be invited to the grand finale.</li>
+                <li>Projects must be developed within the 24-hour timeframe.</li>
+                <li>Final project demo should not exceed 15 minutes.</li>
+                <li>Plagiarism is strictly prohibited.</li>
+                <li>Participants must bring their own laptops and development tools.</li>
+                <li>Participants should use given standard PPT Format : <a
+                        href="https://docs.google.com/presentation/d/1L5j3AeZe4F4UA-MK8NCdnYPecxGVN8bm/edit?usp=drive_link&ouid=112355727294369462305&rtpof=true&sd=true"
+                        style="font-weight: 500;">click here</a> </li>
+            </ul>
+
+            <h3>Registration Details</h3>
+            <p><strong>💳 Payment:</strong> Complete online registration.</p>
+            <p><strong>📩 Contact:</strong> <a href="mailto:compact@gcoej.ac.in">compact@gcoej.ac.in</a></p>
+
+            <div class="contact">
+                <h3>For More Information</h3>
+                <p><strong>📞 Coordinators:</strong></p>
+                <p>Ujjwal Abdeo (Coordinator): +91 80105 34960</p>
+                <p>Vitthal Dhage (President): +91 90213 73220</p>
+            </div>
+
+            <div class="buttons">
+                <a href="https://forms.gle/84yC6N9iGARbN1so9" target="_blank" class="btn">Register Now</a>
+                <a href="https://drive.google.com/file/d/19oBal6UKcwzBrjwPOOw4c1dBvDJjT-IS/view?usp=sharing"
+                    class="btn">Download Rulebook</a>
+            </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>
