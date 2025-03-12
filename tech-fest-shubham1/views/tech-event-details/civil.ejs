@@ -1,222 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArchX – The Ultimate Bridge Challenge - Tech Carvaan 2K25</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    p,
-    a,
-    button {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
 
-    body {
-      background-color: #0a192f;
-      color: #ccd6f6;
-      line-height: 1.6;
-      padding: 20px;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArchX – The Ultimate Bridge Challenge - Tech Carvaan 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 
+  body {
+    background-color: #0a192f;
+    color: #ccd6f6;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: calc(100% - 400px);
+    /* 200px margin on both sides */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #112240;
+    border: 2px solid #64ffda;
+    /* Border color matching the theme */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #64ffda;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  strong {
+    color: #64ffda;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #0a192f;
+    background-color: #64ffda;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #52d1b2;
+  }
+
+  /* Center the buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center the buttons */
+    gap: 20px;
+    /* Adds space between the buttons */
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
     .container {
-      max-width: calc(100% - 400px); /* 200px margin on both sides */
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #112240;
-      border: 2px solid #64ffda; /* Border color matching the theme */
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: calc(100% - 200px);
+      /* Reduce margin for smaller screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: calc(100% - 100px);
+      /* Further reduce margin for tablets */
     }
 
     h1 {
-      font-size: 2.5rem;
-      color: #64ffda;
-      margin-bottom: 20px;
-      text-align: center;
+      font-size: 2rem;
+      /* Adjust heading size for smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      max-width: calc(100% - 40px);
+      /* Minimal margin for mobile devices */
+      padding: 15px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      /* Further adjust heading size for mobile */
     }
 
     p {
-      font-size: 1.1rem;
-      margin-bottom: 15px;
-    }
-
-    strong {
-      color: #64ffda;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
       font-size: 1rem;
-      color: #0a192f;
-      background-color: #64ffda;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
+      /* Adjust paragraph font size for mobile */
     }
 
-    .btn:hover {
-      background-color: #52d1b2;
-    }
-
-    /* Center the buttons */
     .buttons {
-      display: flex;
-      justify-content: center; /* Horizontally center the buttons */
-      gap: 20px; /* Adds space between the buttons */
+      flex-direction: column;
+      /* Stack buttons vertically on small screens */
+      align-items: center;
+      /* Center buttons vertically */
     }
+  }
+</style>
 
-    /* Responsive adjustments */
-    @media (max-width: 1200px) {
-      .container {
-        max-width: calc(100% - 200px); /* Reduce margin for smaller screens */
-      }
-    }
+<body>
+  <div class="container">
+    <h1>ArchX – The Ultimate Bridge Challenge</h1>
+    <h2>Organized by NIRMANIKA, Civil Department, GCOEJ</h2>
 
-    @media (max-width: 768px) {
-      .container {
-        max-width: calc(100% - 100px); /* Further reduce margin for tablets */
-      }
+    <div class="details">
+      <p><strong>📅 Event Date:</strong> 27th March 2025, 10 AM to 2 PM</p>
+      <p>
+        <strong>📍 Venue:</strong> Main Academic Building, Room No. 225,
+        Government College of Engineering, Jalgaon
+      </p>
 
-      h1 {
-        font-size: 2rem; /* Adjust heading size for smaller screens */
-      }
-    }
+      <h3>About the Event</h3>
+      <p>
+        Welcome to ArchX – The Ultimate Bridge Challenge presented by
+        NIRMANIKA, the Civil Department of GCOEJ. This event is designed for
+        passionate engineers and enthusiasts to create stable bridges that can
+        sustain loads. Our mission is to push the boundaries of civil
+        engineering through creative ingenuity and teamwork. Join us as we
+        explore new horizons in technical events.
+      </p>
 
-    @media (max-width: 480px) {
-      .container {
-        max-width: calc(100% - 40px); /* Minimal margin for mobile devices */
-        padding: 15px;
-      }
+      <h3>Event Rules</h3>
+      <ul>
+        <li>
+          Each group (2 participants) will be provided with 120 ice cream
+          sticks, glue, and a cutter.
+        </li>
+        <li>
+          The bridge must be self-supporting and stand independently on the
+          testing platform.
+        </li>
+        <li>The span length must be 45 cm, and the gap must be 40 cm.</li>
+        <li>
+          The bridge must have a width of 12 cm to allow weight placement.
+        </li>
+        <li>
+          The height must be between 10 cm and 15 cm, and weight limits will
+          be specified by the organizers.
+        </li>
+        <li>
+          The bridge must allow for load testing placement at the center.
+        </li>
+      </ul>
 
-      h1 {
-        font-size: 1.8rem; /* Further adjust heading size for mobile */
-      }
+      <h3>Judging Criteria</h3>
+      <ul>
+        <li>
+          The bridge must hold a gradually increasing load until failure.
+          Bridges with correct dimensions are valid.
+        </li>
+        <li>
+          The maximum load sustained before breaking determines the score.
+        </li>
+        <li>Load will be applied incrementally until failure.</li>
+        <li>
+          Testing will be done using hanging weights, sandbags, or a universal
+          testing machine.
+        </li>
+      </ul>
 
-      p {
-        font-size: 1rem; /* Adjust paragraph font size for mobile */
-      }
+      <h3>Registration Details</h3>
+      <p><strong>💰 Entry Fee:</strong> ₹100 per group</p>
+      <p><strong>📋 How to Register:</strong></p>
+      <ol>
+        <li>Scan the QR code to register.</li>
+        <li>Fill out the Google Form with the required details.</li>
+        <li>Pay the required fee.</li>
+        <li>
+          Upload the transaction slip on the Google Form to complete
+          registration.
+        </li>
+      </ol>
+      <p><strong>⚠️ Note:</strong> Registration fees are non-refundable.</p>
 
-      .buttons {
-        flex-direction: column; /* Stack buttons vertically on small screens */
-        align-items: center; /* Center buttons vertically */
-      }
-    }
-  </style>
-  <body>
-    <div class="container">
-      <h1>ArchX – The Ultimate Bridge Challenge</h1>
-      <h2>Organized by NIRMANIKA, Civil Department, GCOEJ</h2>
+      <h3>Prize Pool</h3>
+      <ul>
+        <li><strong>🥇 Winner:</strong> ₹3000</li>
+        <li><strong>🥈 Runner-up:</strong> ₹2000</li>
+      </ul>
 
-      <div class="details">
-        <p><strong>📅 Event Date:</strong> 27th March 2025, 10 AM to 2 PM</p>
-        <p>
-          <strong>📍 Venue:</strong> Main Academic Building, Room No. 225,
-          Government College of Engineering, Jalgaon
-        </p>
+      <div class="contact">
+        <h3>For More Information</h3>
+        <p><strong>📞 Coordinators:</strong></p>
+        <p>Daminil Bhoge (Coordinator): +91 8830010418</p>
+        <p>Ankur Adakmok (Co-Coordinator): +91 9021605470</p>
+        <p>Prof. V.P. Jadhao (Faculty Coordinator)</p>
+      </div>
 
-        <h3>About the Event</h3>
-        <p>
-          Welcome to ArchX – The Ultimate Bridge Challenge presented by
-          NIRMANIKA, the Civil Department of GCOEJ. This event is designed for
-          passionate engineers and enthusiasts to create stable bridges that can
-          sustain loads. Our mission is to push the boundaries of civil
-          engineering through creative ingenuity and teamwork. Join us as we
-          explore new horizons in technical events.
-        </p>
-
-        <h3>Event Rules</h3>
-        <ul>
-          <li>
-            Each group (2 participants) will be provided with 120 ice cream
-            sticks, glue, and a cutter.
-          </li>
-          <li>
-            The bridge must be self-supporting and stand independently on the
-            testing platform.
-          </li>
-          <li>The span length must be 45 cm, and the gap must be 40 cm.</li>
-          <li>
-            The bridge must have a width of 12 cm to allow weight placement.
-          </li>
-          <li>
-            The height must be between 10 cm and 15 cm, and weight limits will
-            be specified by the organizers.
-          </li>
-          <li>
-            The bridge must allow for load testing placement at the center.
-          </li>
-        </ul>
-
-        <h3>Judging Criteria</h3>
-        <ul>
-          <li>
-            The bridge must hold a gradually increasing load until failure.
-            Bridges with correct dimensions are valid.
-          </li>
-          <li>
-            The maximum load sustained before breaking determines the score.
-          </li>
-          <li>Load will be applied incrementally until failure.</li>
-          <li>
-            Testing will be done using hanging weights, sandbags, or a universal
-            testing machine.
-          </li>
-        </ul>
-
-        <h3>Registration Details</h3>
-        <p><strong>💰 Entry Fee:</strong> ₹100 per group</p>
-        <p><strong>📋 How to Register:</strong></p>
-        <ol>
-          <li>Scan the QR code to register.</li>
-          <li>Fill out the Google Form with the required details.</li>
-          <li>Pay the required fee.</li>
-          <li>
-            Upload the transaction slip on the Google Form to complete
-            registration.
-          </li>
-        </ol>
-        <p><strong>⚠️ Note:</strong> Registration fees are non-refundable.</p>
-
-        <h3>Prize Pool</h3>
-        <ul>
-          <li><strong>🥇 Winner:</strong> ₹3000</li>
-          <li><strong>🥈 Runner-up:</strong> ₹2000</li>
-        </ul>
-
-        <div class="contact">
-          <h3>For More Information</h3>
-          <p><strong>📞 Coordinators:</strong></p>
-          <p>Daminil Bhoge (Coordinator): +91 8830010418</p>
-          <p>Ankur Adakmok (Co-Coordinator): +91 9021605470</p>
-          <p>Prof. V.P. Jadhao (Faculty Coordinator)</p>
-        </div>
-
-        <div class="buttons">
-          <a
-            href="https://forms.gle/iZc4c8zB2rwgHEfe7"
-            target="_blank"
-            class="btn"
-            >Register Now</a
-          >
-          <a
-            href="https://drive.google.com/file/d/1pu9V7jzScMkNbLY8yvBwEe-K098eZkGo/view?usp=sharing"
-            class="btn"
-            >Download Rulebook</a
-          >
-        </div>
+      <div class="buttons">
+        <a href="https://forms.gle/iZc4c8zB2rwgHEfe7" target="_blank" class="btn">Register Now</a>
+        <a href="https://drive.google.com/file/d/1pu9V7jzScMkNbLY8yvBwEe-K098eZkGo/view?usp=sharing"
+          class="btn">Download Rulebook</a>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
